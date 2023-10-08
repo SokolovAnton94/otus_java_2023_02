@@ -1,0 +1,1 @@
+TRUNCATE Manager, client, client_details CASCADE;

@@ -1,0 +1,1 @@
+insert into table_with_pk(id_part1, id_part2, value) VALUES ('id_test1', 'id_test2', 'testValue');
