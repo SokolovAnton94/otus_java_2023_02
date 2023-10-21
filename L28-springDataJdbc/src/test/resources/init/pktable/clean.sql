@@ -1,0 +1,1 @@
+TRUNCATE table_with_pk CASCADE;

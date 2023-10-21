@@ -44,7 +44,7 @@ public class ActionDemo implements CommandLineRunner {
     public void run(String... args) {
 
 //// создаем Manager
-        log.info(">>> manager creation");
+       /* log.info(">>> manager creation");
         dbServiceManager.saveManager(new Manager("m:" + System.currentTimeMillis(), "ManagerFirst", new HashSet<>(), new ArrayList<>(), true));
 
 
@@ -116,12 +116,12 @@ public class ActionDemo implements CommandLineRunner {
                 .orElseThrow(() -> new RuntimeException("Manager not found, name:" + managerSecond.getId()));
         log.info(">>> managerN:{}", managerN);
 
-        /*
+        *//*
         получаем основную сущность:
         [SELECT "manager"."id" AS "id", "manager"."label" AS "label" FROM "manager" WHERE "manager"."id" = ?]
         получаем дочерние:
         [SELECT "client"."id" AS "id", "client"."name" AS "name", "client"."manager_id" AS "manager_id" FROM "client" WHERE "client"."manager_id" = ?]
-        */
+        *//*
         log.info(">>> select all");
         var allManagers = managerRepository.findAll();
         log.info(">>> allManagers.size():{}", allManagers.size());
@@ -137,6 +137,6 @@ public class ActionDemo implements CommandLineRunner {
 
 
         TableWithPk loadedTableWithPk = tableWithPkRepository.findById(pk).orElseThrow();
-        log.info("loadedTableWithPk:{}", loadedTableWithPk);
+        log.info("loadedTableWithPk:{}", loadedTableWithPk);*/
     }
 }
